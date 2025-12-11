@@ -1,37 +1,37 @@
 /* Setup variables */
 :root {
-	--twsa-safe-area-inset-top: env(safe-area-inset-top);
-	--twsa-safe-area-inset-right: env(safe-area-inset-right);
-	--twsa-safe-area-inset-bottom: env(safe-area-inset-bottom);
-	--twsa-safe-area-inset-left: env(safe-area-inset-left);
+	--twsa-safe-area-inset-top: var(--safe-area-inset-top, env(safe-area-inset-top));
+	--twsa-safe-area-inset-right: var(--safe-area-inset-right, env(safe-area-inset-right));
+	--twsa-safe-area-inset-bottom: var(--safe-area-inset-bottom, env(safe-area-inset-bottom));
+	--twsa-safe-area-inset-left: var(--safe-area-inset-left, env(safe-area-inset-left));
 }
 
 /* Safe initialisation utilities */
 @utility safe {
-	--twsa-safe-area-inset-top: env(safe-area-inset-top);
-	--twsa-safe-area-inset-right: env(safe-area-inset-right);
-	--twsa-safe-area-inset-bottom: env(safe-area-inset-bottom);
-	--twsa-safe-area-inset-left: env(safe-area-inset-left);
+	--twsa-safe-area-inset-top: var(--safe-area-inset-top, env(safe-area-inset-top));
+	--twsa-safe-area-inset-right: var(--safe-area-inset-right, env(safe-area-inset-right));
+	--twsa-safe-area-inset-bottom: var(--safe-area-inset-bottom, env(safe-area-inset-bottom));
+	--twsa-safe-area-inset-left: var(--safe-area-inset-left, env(safe-area-inset-left));
 }
 @utility safe-x {
-	--twsa-safe-area-inset-right: env(safe-area-inset-right);
-	--twsa-safe-area-inset-left: env(safe-area-inset-left);
+	--twsa-safe-area-inset-right: var(--safe-area-inset-right, env(safe-area-inset-right));
+	--twsa-safe-area-inset-left: var(--safe-area-inset-left, env(safe-area-inset-left));
 }
 @utility safe-y {
-	--twsa-safe-area-inset-top: env(safe-area-inset-top);
-	--twsa-safe-area-inset-bottom: env(safe-area-inset-bottom);
+	--twsa-safe-area-inset-top: var(--safe-area-inset-top, env(safe-area-inset-top));
+	--twsa-safe-area-inset-bottom: var(--safe-area-inset-bottom, env(safe-area-inset-bottom));
 }
 @utility safe-t {
-	--twsa-safe-area-inset-top: env(safe-area-inset-top);
+	--twsa-safe-area-inset-top: var(--safe-area-inset-top, env(safe-area-inset-top));
 }
 @utility safe-r {
-	--twsa-safe-area-inset-right: env(safe-area-inset-right);
+	--twsa-safe-area-inset-right: var(--safe-area-inset-right, env(safe-area-inset-right));
 }
 @utility safe-b {
-	--twsa-safe-area-inset-bottom: env(safe-area-inset-bottom);
+	--twsa-safe-area-inset-bottom: var(--safe-area-inset-bottom, env(safe-area-inset-bottom));
 }
 @utility safe-l {
-	--twsa-safe-area-inset-left: env(safe-area-inset-left);
+	--twsa-safe-area-inset-left: var(--safe-area-inset-left, env(safe-area-inset-left));
 }
 
 /* Safe reset utilities */
